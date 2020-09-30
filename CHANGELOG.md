@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - _CHANGELOG.md_ created.
+- Import utils from ageneau/blossom
+- Imported functions from various private repos
+- Add unit tests for Clojure and Clojurescript
 ### Changed
 - Something has been changed.
 ### Fixed
