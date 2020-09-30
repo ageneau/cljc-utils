@@ -6,7 +6,7 @@
 Utility functions used in my other projects.
 
 ```clj
-[ageneau/ageneau.utils "0.0.0"]
+[ageneau/ageneau.utils "0.1.0"]
 ```
 
 ## Usage
