@@ -14,13 +14,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Import utils from ageneau/blossom
 - Imported functions from various private repos
 - Add unit tests for Clojure and Clojurescript
-### Changed
-- Something has been changed.
-### Fixed
-- Something has been fixed.
-### Removed
-- Something has been removed.
-
 
 [0.1.0]: https://github.com/ageneau/cljc-utils/compare/0.0.0...0.1.0
 [Unreleased]: https://github.com/ageneau/cljc-utils/compare/0.1.0...HEAD
