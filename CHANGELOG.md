@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 
 ## [Unreleased]
+
+## [0.1.1] — 2020-10-06
 ### Added
 - Add macros
 - Add github workflow for testing
@@ -20,4 +22,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Add unit tests for Clojure and Clojurescript
 
 [0.1.0]: https://github.com/ageneau/cljc-utils/compare/0.0.0...0.1.0
-[Unreleased]: https://github.com/ageneau/cljc-utils/compare/0.1.0...HEAD
+[0.1.1]: https://github.com/ageneau/cljc-utils/compare/0.1.0...0.1.1
+[Unreleased]: https://github.com/ageneau/cljc-utils/compare/0.1.1...HEAD

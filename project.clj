@@ -1,4 +1,4 @@
-(defproject ageneau/ageneau.utils "0.1.0"
+(defproject ageneau/ageneau.utils "0.1.1"
   :description "Utility functions used in my other projects"
   :url "https://github.com/ageneau/cljc-utils"
   :license {:name "Eclipse Public License"
