@@ -21,7 +21,8 @@
                         :optimizations :none
                         :pretty-print  true
                         :source-map true}}]}
-  :deploy-repositories [["releases" :clojars]]
+  :deploy-repositories [["releases" :clojars]
+                        ["github" {:url "https://maven.pkg.github.com/ageneau/cljc-utils" :creds :gpg}]]
   :aliases {"update-readme-version" ["shell" "sed" "-i" "s/\\\\[ageneau\\\\/ageneau\\.utils \"[0-9.]*\"\\\\]/[ageneau\\\\/ageneau\\.utils \"${:version}\"]/" "README.md"]}
   :release-tasks [["shell" "git" "diff" "--exit-code"]
                   ["change" "version" "leiningen.release/bump-version"]
