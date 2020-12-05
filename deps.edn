@@ -1,0 +1,39 @@
+{:deps  {org.clojure/clojure {:mvn/version "1.10.1"}}
+ :paths ["src"]
+ :aliases
+ {:test
+  {:extra-deps  {org.clojure/test.check {:mvn/version "1.1.0"}}
+   :extra-paths ["test"]}
+
+  :runner
+  {:extra-deps {com.cognitect/test-runner
+                {:git/url "https://github.com/cognitect-labs/test-runner"
+                 :sha     "b6b3193fcc42659d7e46ecd1884a228993441182"}}
+   :main-opts  ["-m" "cognitect.test-runner"
+                "-d" "test"]}
+
+  :kaocha-runner
+  {:extra-deps {lambdaisland/kaocha           {:mvn/version "1.0.732"}
+                lambdaisland/kaocha-cloverage {:mvn/version "1.0.75"}
+                lambdaisland/kaocha-cljs      {:mvn/version "0.0-71"}}
+   :main-opts  ["-m" "kaocha.runner"]}
+
+  :changelog
+  {:extra-deps {ageneau/keepachangelog {:mvn/version "0.1.0"}}
+   :main-opts  ["-m" "changelog.main"]}
+
+  :jar
+  {:extra-deps {seancorfield/depstar {:mvn/version "1.1.136"}}
+   :exec-fn    hf.depstar.jar/run}
+
+  :deploy
+  {:extra-deps {deps-deploy/deps-deploy {:mvn/version "0.0.12"}}
+   :main-opts  ["-m" "deps-deploy.deps-deploy" "deploy"]}
+
+  :outdated
+  {:extra-deps {antq/antq           {:mvn/version "0.9.2"}
+                org.slf4j/slf4j-nop {:mvn/version "1.7.30"}}
+   :main-opts  ["-m" "antq.core"]}}
+
+ :mvn/repos
+ {"cljc-utils" {:url "https://maven.pkg.github.com/ageneau/cljc-utils"}}}

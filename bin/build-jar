@@ -1,0 +1,11 @@
+#! /bin/bash
+
+source ./bin/common.sh
+
+function usage {
+  echo usage:" ${0##*/} [OPTIONS]" >&2
+  exit 2
+}
+
+check-file "$INFO"
+$CLOJURE -X:jar :jar \""$JAR"\" "$@"

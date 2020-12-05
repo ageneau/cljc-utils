@@ -1,0 +1,15 @@
+#! /bin/bash
+
+source ./bin/common.sh
+
+function usage {
+  echo usage:" ${0##*/}" >&2
+  exit 2
+}
+
+if [ "$#" -ne 0 ]; then
+  usage
+fi
+
+check-file "$JAR"
+$CLOJURE -X:deps mvn-install :jar \""$JAR"\"
