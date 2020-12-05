@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 
 ## [Unreleased]
+### Added
+- Add test functions
+- Add read-as-text
+### Changed
+- Migrate to deps.edn
 
 ## [0.1.1] — 2020-10-06
 ### Added
