@@ -12,14 +12,14 @@
 (defn v-add
   "add the 2 vectors"
   [a b]
-  (vec (map #(apply + %) (partition 2 (interleave a b)))))
+  (mapv #(apply + %) (partition 2 (interleave a b))))
 
 (defn v-subtract
   "subtract the 2 vectors"
   [a b]
-  (vec (map #(apply - %) (partition 2 (interleave a b)))))
+  (mapv #(apply - %) (partition 2 (interleave a b))))
 
 (defn v-scale
   "multiply all elements of the vector by a scalar"
   [v s]
-  (vec (map (partial * s) v)))
+  (mapv (partial * s) v))
