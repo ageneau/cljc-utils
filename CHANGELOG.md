@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Add test functions
 - Add read-as-text
+- Add paths-get
+- Add mk-temp-dir
 ### Changed
 - Migrate to deps.edn
 
