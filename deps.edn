@@ -33,7 +33,7 @@
    :main-opts  ["-m" "deps-deploy.deps-deploy" "deploy"]}
 
   :outdated
-  {:extra-deps {antq/antq           {:mvn/version "0.9.2"}
+  {:extra-deps {antq/antq           {:mvn/version "0.10.0"}
                 org.slf4j/slf4j-nop {:mvn/version "1.7.30"}}
    :main-opts  ["-m" "antq.core"]}}
 

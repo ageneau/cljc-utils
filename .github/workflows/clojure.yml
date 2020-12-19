@@ -2,21 +2,21 @@ name: Clojure CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, devel ]
   pull_request:
     branches: [ master ]
 
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
     - uses: actions/checkout@v2
 
     - uses: DeLaGuardo/setup-clojure@3.0
       with:
-        tools-deps: '1.10.1.739'
+        tools-deps: '1.10.1.763'
 
     - name: Cache node modules
       uses: actions/cache@v2.1.3
