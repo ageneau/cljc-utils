@@ -8,3 +8,7 @@
 /.idea
 /*.iml
 /.cpcache
+/node_modules
+/out
+/package-lock.json
+/.cljs_node_repl
