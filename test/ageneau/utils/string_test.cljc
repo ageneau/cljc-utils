@@ -32,3 +32,6 @@
     (t/is (= ["Get" "Alpha" "From" "RGB"] (tokenize-string "GetAlphaFromRGB")))
     (t/is (= ["Linear" "Specular" "LOD"] (tokenize-string "LinearSpecularLOD")))))
 
+(t/deftest upper-first-letter
+  (t/is (= "CapitalizedFirst" (sut/upper-first-letter "capitalizedFirst"))))
+

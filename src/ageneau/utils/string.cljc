@@ -40,3 +40,8 @@
        (drop-while (comp seq second))
        first
        first))
+
+(defn upper-first-letter
+  "Convert the first letter to upper case."
+  [s]
+  (str (str/upper-case (subs s 0 1)) (subs s 1)))
