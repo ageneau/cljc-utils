@@ -16,7 +16,7 @@
     (is (= [3 4 5 6 7 8 9 0 1 2]
            (utils/split-and-reverse (range 10) 3)))))
 
-(deftest doto-asser
+(deftest doto-assert
   (testing "doto-assert"
     (is (= 5 (utils/doto-assert 5 odd?)))
     (is (= [] (utils/doto-assert [] empty? "sequence is not empty")))
