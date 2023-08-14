@@ -1,16 +1,16 @@
-{:deps  {org.clojure/clojure   {:mvn/version "1.10.1"}
-         metosin/malli         {:mvn/version "0.2.1"}
-         org.clojure/data.json {:mvn/version "1.0.0"}}
+{:deps  {org.clojure/clojure   {:mvn/version "1.11.1"}
+         metosin/malli         {:mvn/version "0.11.0"}
+         org.clojure/data.json {:mvn/version "2.4.0"}}
  :paths ["src"]
  :aliases
  {:test
-  {:extra-deps  {org.clojure/test.check {:mvn/version "1.1.0"}}
+  {:extra-deps  {org.clojure/test.check {:mvn/version "1.1.1"}}
    :extra-paths ["test"]}
 
   :runner
   {:extra-deps {com.cognitect/test-runner
                 {:git/url "https://github.com/cognitect-labs/test-runner"
-                 :sha     "b6b3193fcc42659d7e46ecd1884a228993441182"}}
+                 :sha     "7284cda41fb9edc0f3bc6b6185cfb7138fc8a023"}}
    :main-opts  ["-m" "cognitect.test-runner"
                 "-d" "test"]}
 
@@ -25,7 +25,7 @@
    :main-opts  ["-m" "changelog.main"]}
 
   :jar
-  {:extra-deps {seancorfield/depstar {:mvn/version "1.1.136"}}
+  {:extra-deps {com.github.seancorfield/depstar {:mvn/version "2.0.303"}}
    :exec-fn    hf.depstar.jar/run}
 
   :deploy
@@ -33,8 +33,8 @@
    :main-opts  ["-m" "deps-deploy.deps-deploy" "deploy"]}
 
   :outdated
-  {:extra-deps {antq/antq           {:mvn/version "0.10.0"}
-                org.slf4j/slf4j-nop {:mvn/version "1.7.30"}}
+  {:extra-deps {com.github.liquidz/antq {:mvn/version "2.5.1109"}
+                org.slf4j/slf4j-nop     {:mvn/version "2.0.7"}}
    :main-opts  ["-m" "antq.core"]}}
 
  :mvn/repos

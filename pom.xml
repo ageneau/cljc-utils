@@ -54,17 +54,17 @@
     <dependency>
       <groupId>org.clojure</groupId>
       <artifactId>data.json</artifactId>
-      <version>1.0.0</version>
+      <version>2.4.0</version>
     </dependency>
     <dependency>
       <groupId>org.clojure</groupId>
       <artifactId>clojure</artifactId>
-      <version>1.10.1</version>
+      <version>1.11.1</version>
     </dependency>
     <dependency>
       <groupId>metosin</groupId>
       <artifactId>malli</artifactId>
-      <version>0.2.1</version>
+      <version>0.11.0</version>
     </dependency>
   </dependencies>
 </project>
