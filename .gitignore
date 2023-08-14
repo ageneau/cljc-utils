@@ -12,3 +12,4 @@
 /out
 /package-lock.json
 /.cljs_node_repl
+/.shadow-cljs/

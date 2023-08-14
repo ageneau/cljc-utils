@@ -1,0 +1,6 @@
+{:deps {:aliases [:cljs]}
+
+ :builds
+ {:ci
+  {:target    :karma
+   :output-to "target/ci.js"}}}
