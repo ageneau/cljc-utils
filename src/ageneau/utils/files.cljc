@@ -6,9 +6,9 @@
                                   Files)
                    (java.nio.file.attribute FileAttribute))))
 
-(def read-json-file
-  #?(:clj json/read-str
-     :cljs (comp js->clj js/JSON.parse)))
+(defn read-json-file [f]
+  #?(:clj (json/read-str f)
+     :cljs (js->clj (js/JSON.parse f))))
 
 #?(:clj (defn files-with-ext-in-dir
           "Return the list of paths for files that match the extension ext in directory dir."
